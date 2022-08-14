@@ -16,6 +16,9 @@ body{
 }
 #column-left>ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 #column-left>ul>li{
     display: flex;
