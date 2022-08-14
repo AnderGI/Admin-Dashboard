@@ -8,119 +8,28 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 95%;
     gap: 4px;
 }
 #column-left{
     border: 2px solid black;
-    display: grid;
-}
-#column-left >ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 8px;
-}
-#column-left >ul>li{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#column-left >ul>li>a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-#column-left >ul>li>a#dashboard{
-    font-weight:700;
-    font-size: 1.75rem;
 }
 #column-right{
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    gap: 4px;
+ border: 2px solid black;
+ display: grid;
+ grid-template-rows: 1fr 3fr;
+ gap: 6px;
 }
 .user-info{
     display: grid;
     grid-template-rows: 1fr 2fr;
+    gap: 6px;
 }
-.user-info>div, .portfolio>div{
+.navigator, .user, .projects, .extras{
     border: 2px solid black;
-}
-.navigator{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    align-items: center;
-}
-form{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-}
-fieldset{
-    display: flex;
-    width: 40%;
-}
-#fieldset-search{
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 4px solid turquoise;
-    background-color: aliceblue;
-}
-#fieldset-search>input{
- width: 100%;
- padding: 5px 10px;
- font-size: 1rem;
-}
-#fieldset-user{
-    display: flex;
-    justify-content: space-evenly;
-    border: none;
-    gap: 1rem;
-}
-#fieldset-user>p{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-weight: 700;
-    font-size: 1.25rem;
 }
 .portfolio{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 4px;
-}
-.projects{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 10px;
-}
-.projects-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px;
-    gap: 7px 14px;
-}
-.projects-items>div{
-    border: 1px solid turquoise;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color:aquamarine;
-    padding: 10px;
-    font-size: 0.75rem;
-    border-left: 15px solid turquoise;
-}
-#project-status{
-    display: flex;
-    align-items: center;
-  
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 6px;
 }
