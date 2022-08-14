@@ -16,10 +16,6 @@ body{
 }
 #column-left>ul{
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1rem;
 }
 #column-left>ul>li{
     display: flex;
@@ -34,8 +30,8 @@ body{
     font-size: 2vmin;
 }
 #column-left>ul>li>img{
-   width: clamp(2vmin, 5vmin, 7vmin);
-   height: clamp(2vmin, 5vmin, 7vmin);
+   width: clamp(1vmin, 5vmin, 7vmin);
+   height: clamp(1vmin, 5vmin, 7vmin);
 }
 #column-right{
  display: grid;
