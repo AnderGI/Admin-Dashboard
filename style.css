@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     border: 2px solid black;
 }
 #column-left>ul>li>a{
