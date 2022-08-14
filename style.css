@@ -56,3 +56,17 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 6px;
 }
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.projects-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 0.5rem;
+}
+.projects-items>div{
+    border: 2px solid black;
+}
