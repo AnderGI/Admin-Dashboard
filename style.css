@@ -8,11 +8,28 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 15% 95%;
+    grid-template-columns: 20% 80%;
     gap: 4px;
 }
 #column-left{
     border: 2px solid black;
+}
+#column-left>ul{
+    list-style: none;
+    padding: 5px;
+}
+#column-left>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid black;
+}
+#column-left>ul>li>a{
+    text-decoration: none;
+}
+#column-left>ul>li>img{
+    width: max-content(auto,20px);
+    height: max-content(auto,20px);
 }
 #column-right{
  border: 2px solid black;
@@ -30,6 +47,6 @@ body{
 }
 .portfolio{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 6px;
 }
