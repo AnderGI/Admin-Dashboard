@@ -8,7 +8,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 15% 85%;
     gap: 4px;
 }
 #column-left{
