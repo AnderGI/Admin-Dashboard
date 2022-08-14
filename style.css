@@ -21,8 +21,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    border: 2px solid black;
+    justify-content: start;
 }
 #column-left>ul>li>a{
     text-decoration: none;
@@ -31,6 +30,8 @@ body{
 }
 #column-left>ul>li>img{
    height: 5vh;
+   width: clamp(2vmin, 5vmin, 7vmin);
+   height: clamp(2vmin, 5vmin, 7vmin);
 }
 #column-right{
  display: grid;
