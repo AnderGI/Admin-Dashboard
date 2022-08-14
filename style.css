@@ -8,14 +8,12 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 9fr;
     gap: 4px;
 }
 #column-left{
     border: 2px solid black;
     display: grid;
-    grid-template-columns:1fr;
-    
 }
 #column-left >ul{
     list-style: none;
@@ -93,7 +91,7 @@ fieldset{
 }
 .portfolio{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     gap: 4px;
 }
 .projects{
