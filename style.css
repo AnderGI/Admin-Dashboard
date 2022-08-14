@@ -58,6 +58,7 @@ body{
 }
 form{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
 }
@@ -80,17 +81,19 @@ fieldset{
     display: flex;
     justify-content: space-evenly;
     border: none;
+    gap: 1rem;
 }
 #fieldset-user>p{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     font-weight: 700;
     font-size: 1.25rem;
 }
 .portfolio{
     display: grid;
-    grid-template-columns: 6fr 2fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 4px;
 }
 .projects{
