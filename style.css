@@ -16,7 +16,6 @@ body{
 }
 #column-left>ul{
     list-style: none;
-    padding: 5px;
 }
 #column-left>ul>li{
     display: flex;
