@@ -61,6 +61,7 @@ body{
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem;
+    font-size: 2vmin;
 }
 .projects-items{
     display: grid;
@@ -69,4 +70,5 @@ body{
 }
 .projects-items>div{
     border: 2px solid black;
+    font-size: 2vmin;
 }
