@@ -26,6 +26,7 @@ body{
 }
 #column-left>ul>li>a{
     text-decoration: none;
+    font-size: clamp(0.5rem, 0.8rem, 1rem);
 }
 #column-left>ul>li>img{
     width: max-content(auto,20px);
