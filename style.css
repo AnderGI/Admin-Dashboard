@@ -18,7 +18,7 @@ body{
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 8px;
 }
 #column-left>ul>li{
     display: flex;
@@ -29,10 +29,9 @@ body{
 #column-left>ul>li>a{
     text-decoration: none;
     color: black;
-    font-size: 1.5vmin;
+    font-size: 2vmin;
 }
 #column-left>ul>li>img{
-   height: 5vh;
    width: clamp(2vmin, 5vmin, 7vmin);
    height: clamp(2vmin, 5vmin, 7vmin);
 }
