@@ -22,7 +22,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    border: 2px solid black;
+  
+    
 }
 #column-left>ul>li>a{
     text-decoration: none;
