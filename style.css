@@ -16,14 +16,15 @@ body{
 }
 #column-left>ul{
     list-style: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 #column-left>ul>li{
     display: flex;
-    align-items: center; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
 }
 #column-left>ul>li>a{
     text-decoration: none;
