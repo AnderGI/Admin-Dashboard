@@ -13,6 +13,7 @@ body{
 }
 #column-left{
     border: 2px solid black;
+    padding: 1rem 0rem;
 }
 #column-left>ul{
     list-style: none;
