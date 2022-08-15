@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --islandGreen:#2BAE66FF;
+    --white:#FCF6F5FF;
 }
 body{
    width: 100vw;
@@ -18,6 +20,7 @@ body{
 #column-left{
     border: 2px solid black;
     padding: 1rem 0rem;
+    background-color: var(--islandGreen);
 }
 #column-left>ul{
     list-style: none;
@@ -52,12 +55,16 @@ img{
     grid-template-rows: 1fr 2fr;
     gap: 0.5rem;
 }
+.navigator{
+    background-color: var(--islandGreen);
+}
 .user{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0rem 1rem;
     align-items: center;
+    
 }
 .user>div{
     display: flex;
