@@ -47,6 +47,17 @@ form{
     flex-wrap: wrap;
     justify-content:space-between ;
 }
+fieldset{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vmin;
+}
+fieldset>p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .navigator, .user, .projects, .extras{
     border: 2px solid black;
