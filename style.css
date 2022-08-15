@@ -44,33 +44,10 @@ img{
 }
 form{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:space-between ;
 }
-#fieldset-search{
-    display: flex;
-    align-items: center;
-}
-#fieldset-search>input{
-    width: 30rem;
-    height: 2rem;
-    padding: 9px 3px;
-    letter-spacing: 1px;
-}
-#fieldset-user{
-    display: flex;
-    gap: 1.5rem;
-    padding: 0rem 1.5rem;
-}
-#fieldset-user>p{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-.user-info{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr;
-    gap: 6px;
-}
+
 .navigator, .user, .projects, .extras{
     border: 2px solid black;
 }
