@@ -65,6 +65,9 @@ img{
     align-items: center;
     background-color: var(--islandGreen);
 }
+.user.dark{
+    background-color: black;
+}
 .user>div{
     display: flex;
     gap: 1rem;
