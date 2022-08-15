@@ -45,13 +45,18 @@ img{
 form{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between ;
 }
 fieldset{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 3vmin;
+    width: 100%;
+    justify-content:space-evenly;
+}
+fieldset>div{
+    display: flex;
+    align-items: center;
 }
 fieldset>p{
     display: flex;
