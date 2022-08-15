@@ -155,6 +155,31 @@ fieldset>p{
 
 
 /*TOOGLE BETWEEN DARK AND LIGHT*/
-.dark{
-    background-color: Black;
+.label{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: fit-content;
+    background-color: beige;
+    display: flex;
+    border-radius: 50px;
+    position: relative;
 }
+input[type=checkbox]{
+    opacity: 0;
+    position: absolute;
+}
+input[type=checkbox]:checked + label .ball{
+    transform: translateX(46px);
+}
+div.ball{
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    right: 48px;
+    top: 1px;
+    transition: transform 0.2s linear;
+}
+
