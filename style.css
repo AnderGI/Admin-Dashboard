@@ -38,8 +38,8 @@ body{
 }
 #column-left>ul>li>a{
     text-decoration: none;
-    color: black;
     font-size: 2vmin;
+    color:var(--white);
 }
 img{
    width: clamp(1vmin, 5vmin, 7vmin);
@@ -53,7 +53,6 @@ img{
 .user-info{
     display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 0.5rem;
 }
 .navigator{
     background-color: var(--islandGreen);
@@ -64,7 +63,7 @@ img{
     justify-content: space-between;
     padding: 0rem 1rem;
     align-items: center;
-    
+    background-color: var(--islandGreen);
 }
 .user>div{
     display: flex;
@@ -76,10 +75,14 @@ img{
 .user>p{
     display: flex;
     align-items: center;
+    color: var(--white);
 }
 .user>p>img{
     width: 10vmin;
     height: 10vmin;
+}
+#hour{
+    color: var(--white);
 }
 form{
     display: flex;
@@ -102,6 +105,7 @@ fieldset>p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    color: var(--white);
 }
 
 .navigator, .user, .projects, .extras{
@@ -118,6 +122,7 @@ fieldset>p{
     gap: 1rem;
     padding: 0.5rem;
     font-size: 2vmin;
+    background-color: var(--white);
 }
 .projects-items,.extras-items{
     display: grid;
@@ -128,10 +133,15 @@ fieldset>p{
     grid-template-columns: 1fr;
 }
 .projects-items>div, .extras-items>div{
-    border: 2px solid black;
+    border: 1px solid var(--islandGreen);
     font-size: 2vmin;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    width: fit-content;
+    border-left: 10px solid var(--islandGreen) ;
+    border-radius: 10px;
 }
 #project-status, #extra-status{
     border: 2px solid black;
@@ -140,3 +150,11 @@ fieldset>p{
     width: fit-content;
 }
 
+
+/*GOOGLE FONTS*/
+
+
+/*TOOGLE BETWEEN DARK AND LIGHT*/
+.dark{
+    background-color: Black;
+}

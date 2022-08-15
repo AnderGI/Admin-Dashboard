@@ -1,3 +1,4 @@
+//HOURS
 let myHour = document.getElementById('hour')
 
 updateHour()
@@ -20,8 +21,7 @@ function updateHour(){
     }
 }
 
-
-
+//LIGHT MODE AND DARK MODE
 
 
 
