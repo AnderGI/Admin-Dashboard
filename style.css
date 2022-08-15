@@ -76,7 +76,7 @@ form{
 }
 .portfolio{
     display: grid;
-    grid-template-rows: repeat(auto-fit,minmax(300px,1fr)) ;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) ;
     gap: 6px;
 }
 .projects, .extras{
