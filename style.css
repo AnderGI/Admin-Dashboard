@@ -59,7 +59,7 @@ img{
     gap: 1rem;
 }
 .user>div>button{
-    padding: 0.25rem 2rem;
+    padding: 0.25rem 1.5rem;
 }
 .user>p{
     display: flex;
