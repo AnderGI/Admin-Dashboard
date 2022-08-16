@@ -127,6 +127,9 @@ fieldset>p{
     font-size: 2vmin;
     background-color: var(--white);
 }
+.projects.dark{
+    background-color: black;
+}
 .projects-items,.extras-items{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,14 +163,19 @@ fieldset>p{
 /*TOOGLE BETWEEN DARK AND LIGHT*/
 .toogle{
     height: fit-content;
-    width: 8% ;
+    width: 8%;
+    background-color: beige;
+    border-radius: 50px;
 }
-.label{
+.toogle.dark{
+    background-color: chocolate;
+}
+.toogle-label{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0.5vmin;
     height: fit-content;
-    background-color: beige;
     display: flex;
     border-radius: 50px;
     position: relative;
@@ -180,18 +188,6 @@ input[type=checkbox]{
     opacity: 0;
     position: absolute;
 }
-input[type=checkbox]:checked + label .ball{
-    transform: translateX(46px);
-}
-div.ball{
-    opacity: 0;
-    border-radius: 50%;
-    position: absolute;
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    right: 48px;
-    top: 1px;
-    transition: transform 0.2s linear;
-}
+
+
 
