@@ -165,7 +165,7 @@ fieldset>p{
 .label{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     background-color: beige;
     display: flex;
