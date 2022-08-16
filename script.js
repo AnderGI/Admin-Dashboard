@@ -27,6 +27,11 @@ checkbox.addEventListener('click', ()=>{
     document.querySelector('.user').classList.toggle('dark')
     document.querySelector('.projects').classList.toggle('dark')
     document.querySelector('.toogle').classList.toggle('dark')
+    document.querySelector('#column-left').classList.toggle('dark')
+    document.querySelector('.navigator').classList.toggle('dark')
+    document.querySelector('.extras').classList.toggle('dark')
+    document.querySelector('.extras-items>div').classList.toggle('dark')
+    document.querySelector('.body').classList.toggle('dark')
 })
 
 //ADD DIV INTO THE PROJECT CONTAINER WHEN CLICKING NEW BUTTON

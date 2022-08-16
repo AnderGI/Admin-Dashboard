@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --islandGreen:#2BAE66FF;
+    --islandGreen:#2bae66;
     --white:#FCF6F5FF;
+    --lightBrown: #D7C49EFF;
+    --darkBrown: rgb(52, 49, 72);
 }
 body{
    width: 100vw;
    height: 100vh;
    padding: 0.5rem;
+   background-color:rgba(43, 174, 102, 0.5) ;
+}
+body.dark{
+    background-color: rgba(52, 49, 72, 0.5);
 }
 .container{
     display: grid;
@@ -21,6 +27,9 @@ body{
     border: 2px solid black;
     padding: 1rem 0rem;
     background-color: var(--islandGreen);
+}
+#column-left.dark{
+    background-color: var(--darkBrown);
 }
 #column-left>ul{
     list-style: none;
@@ -36,11 +45,12 @@ body{
     align-items: center;
     justify-content: start;
 }
-#column-left>ul>li>a{
+.column-left-a{
     text-decoration: none;
     font-size: 2vmin;
     color:var(--white);
 }
+
 img{
    width: clamp(1vmin, 5vmin, 7vmin);
    height: clamp(1vmin, 5vmin, 7vmin);
@@ -65,8 +75,8 @@ img{
     align-items: center;
     background-color: var(--islandGreen);
 }
-.user.dark{
-    background-color: black;
+.user.dark, .navigator.dark{
+    background-color: var(--darkBrown);
 }
 .user>div{
     display: flex;
@@ -132,6 +142,9 @@ fieldset>p{
     font-size: 2vmin;
     background-color: var(--white);
 }
+.extras.dark{
+    background-color: var(--lightBrown);
+}
 .projects{
     background-color: var(--white);
     position: relative;
@@ -144,7 +157,7 @@ fieldset>p{
     padding-bottom: 0.5rem;
 }
 .projects.dark{
-    background-color: black;
+    background-color: var(--lightBrown);
 }
 .extras-items{
     display: grid;
@@ -162,6 +175,10 @@ fieldset>p{
     padding: 0.5rem 1.5rem;
     border-left: 10px solid var(--islandGreen) ;
     border-radius: 10px;
+}
+.extras-items>div.dark{
+    border: 1px solid var(--darkBrown);
+    border-left: 10px solid var(--darkBrown);
 }
 #myprojects{
     position: absolute;
