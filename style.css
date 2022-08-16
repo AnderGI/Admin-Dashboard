@@ -158,15 +158,23 @@ fieldset>p{
 
 
 /*TOOGLE BETWEEN DARK AND LIGHT*/
+.toogle{
+    height: fit-content;
+    width: 6% ;
+}
 .label{
     display: flex;
     justify-content: space-between;
-    width: 80px;
+    width: 100%;
     height: fit-content;
     background-color: beige;
     display: flex;
     border-radius: 50px;
     position: relative;
+}
+label[for=checkbox]>img{
+    width: clamp(2vmin,3vmin,4vmin);
+    height: clamp(2vmin,3vmin,4vmin);
 }
 input[type=checkbox]{
     opacity: 0;
@@ -176,6 +184,7 @@ input[type=checkbox]:checked + label .ball{
     transform: translateX(46px);
 }
 div.ball{
+    opacity: 0;
     border-radius: 50%;
     position: absolute;
     background-color: black;
