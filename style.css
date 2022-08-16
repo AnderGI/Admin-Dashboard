@@ -141,16 +141,32 @@ fieldset>p{
 .projects-items>div, .extras-items>div{
     border: 1px solid var(--islandGreen);
     font-size: 2vmin;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.5rem 1.5rem;
     width: fit-content;
     border-left: 10px solid var(--islandGreen) ;
     border-radius: 10px;
 }
+.projects-items>div{
+    grid-template-columns:1fr ;
+    gap: 0.5rem;
+}
+.extras-items>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+.projects-items>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+.projects-items>div>div>#delete-img{
+    width: clamp(0.5vmin, 5vmin, 7vmin);
+    height: clamp(0.5vmin, 5vmin, 7vmin);
+}
 #project-status, #extra-status{
-    border: 2px solid black;
     display: flex;
     align-items: center;
     width: fit-content;
