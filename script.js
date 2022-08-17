@@ -35,30 +35,44 @@ checkbox.addEventListener('click', ()=>{
 })
 
 //ADD DIV INTO THE PROJECT CONTAINER WHEN CLICKING NEW BUTTON
-const newBtnEl = document.getElementById('newBtn')
-let itemsContainer = document.querySelector('.projects-items')
+const newProjectsBtnEl = document.getElementById('newProjectBtn')
+let projectsItemsContainer = document.querySelector('.projects-items')
 let i = 0
 
-newBtnEl.addEventListener('click',addNewProject)
+newProjectsBtnEl.addEventListener('click',addNewProject)
 function addNewProject(){
-  console.log('btn clicked')
-  const newItemEl  =  `<div>
+ 
+  const newProjectsItemEl  =  `<div>
 <p id="project-name"> Project Name: ${i} </p>
 <p id="project-status"><img src="./Google Fonts/fiber_manual_record_FILL0_wght400_GRAD0_opsz48.svg">Status: Pending</p>
+<div>
+<img src="./Google Fonts/delete_FILL0_wght400_GRAD0_opsz48.svg" id="delete-img">
+<img src="./Google Fonts/edit_FILL0_wght400_GRAD0_opsz48.svg" id='edit'>
+</div>
+</div>`
+  projectsItemsContainer.insertAdjacentHTML('afterend', newProjectsItemEl)
+  i += 1
+}
+
+//ADD DIV INTO THE EXTRAS CONTAINER WHEN CLICKING NEW EXTRA BUTTON
+
+const newExtraBtnEl = document.getElementById('newExtraBtn')
+let extraItemsContainer = document.querySelector('.extras-items')
+let j = 0
+
+newExtraBtnEl.addEventListener('click',addNewExtra)
+function addNewExtra(){
+  const newExtraItemEl  =  `<div>
+<p id="extra-name"> Extra Name:${j} </p>
+<p id="extra-status"><img src="./Google Fonts/fiber_manual_record_FILL0_wght400_GRAD0_opsz48.svg">Status: Pending</p>
 <div>
 <img src="./Google Fonts/delete_FILL0_wght400_GRAD0_opsz48.svg" id="delete-img">
 <img src="./Google Fonts/edit_FILL0_wght400_GRAD0_opsz48.svg">
 </div>
 </div>`
-  itemsContainer.insertAdjacentHTML('afterend', newItemEl)
-  i += 1
+  extraItemsContainer.insertAdjacentHTML('afterend', newExtraItemEl)
+  j += 1
 }
-
-
-
-
-
-
 
 
 
