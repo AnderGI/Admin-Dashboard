@@ -4,22 +4,33 @@
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
-    height: 100vh;
     padding: 0.25em;
+    height: 200vh;
 }
 section#container{
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 0.25em;
+    
 }
+
 #contentColumn{
     display: grid;
     grid-template-rows: 1fr 3fr;
     gap: 0.5rem;
 }
+
+
+#sideBarColumn>ul{
+    position: fixed;
+}
+
+#contentColumn>header{
+  
+    position: sticky;
+}
+
 #sideBarColumn, #contentColumn>header{
     border: 2px solid black;
 }
