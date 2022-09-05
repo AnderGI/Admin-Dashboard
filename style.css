@@ -13,10 +13,43 @@ body{
     grid-template-rows: 1fr 3fr;
     gap: 0.5rem;
 }
-#sideBarColumn, #contentColumn>header, #contentColumn>main, #contentColumn>main>section{
+#sideBarColumn, #contentColumn>header{
     border: 2px solid black;
 }
 #contentColumn>main{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+
+}
+
+#projectsContainer, #extrasContainer{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0.5em;
+    row-gap: 0.5em;
+}
+#projectsContainer{
+    flex-grow: 2; 
+}
+#extrasContainer{
+    flex-grow: 1;
+}
+
+#projects, #extras{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 2em 0.5em;
+}
+#projects{
+    flex-direction: row;
+}
+#extras{
+    flex-direction: column;
+}
+#projects>div, #extras>div{
+    width: auto;
+    height: auto;
+    border: 1px solid olive;
 }
