@@ -2,72 +2,153 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --mintCream:#F4FFFDFF;
+    --sailorBlue:#00203FFF;
+    --shadow:#c5c5c5;
+  
 }
 body{
     padding: 0.25em;
-    height: 200vh;
+    height: 100vh;
+    background-color:var(--mintCream);
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header>h1{
+    color:var(--sailorBlue);
 }
 section#container{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 0.25em;
     
 }
 
 #contentColumn{
     display: grid;
-    grid-template-rows: 1fr 3fr;
-    gap: 0.5rem;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 0.25em;
 }
 
-
+#sideBarColumn{
+    padding: 2em 0.5em;
+    padding-top: 3em;
+}
 #sideBarColumn>ul{
     position: fixed;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 2em;
+}
+#sideBarColumn>ul>li>a{
+    text-decoration: none;
+    font-size: 1em;
+    color:var(--sailorBlue);
+}
+li:first-of-type{
+    font-size: 1.5em;
 }
 
-#contentColumn>header{
-  
-    position: sticky;
-}
 
-#sideBarColumn, #contentColumn>header{
-    border: 2px solid black;
-}
 #contentColumn>main{
     display: flex;
     flex-direction: row;
-
+    column-gap: 0.25em;
 }
 
 #projectsContainer, #extrasContainer{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     padding: 2em 0.5em;
-    row-gap: 0.5em;
+    row-gap: 1em;
 }
 #projectsContainer{
-    flex-grow: 2; 
+    flex-grow: 2.5; 
+    
 }
+
+#projectsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+   
+    font-size: 1.5em;
+    color: var(--sailorBlue);
+}
+
 #extrasContainer{
     flex-grow: 1;
+ 
+}
+
+#extrasContainer>section#extraHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#extrasContainer>section#extraHeader>button{
+    width: 100%;
+}
+
+#extrasContainer>h1{
+   
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--sailorBlue);
 }
 
 #projects, #extras{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     padding: 2em 0.5em;
 }
 #projects{
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75em 0.5em;
+
 }
 #extras{
     flex-direction: column;
+    row-gap: 0.75em;
 }
-#projects>div, #extras>div{
+
+.projectItem{
     width: auto;
     height: auto;
+    padding: 0.25em 1em;
     border: 1px solid olive;
+    border-radius: 10px;
+    box-shadow: 0em 0em 0.125em 0.125em var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.projectItem>button{
+    width: 100%;
+}
+
+.extraItem{
+    width: auto;
+    height: auto;
+    padding: 0.25em 1em;
+    border-radius: 10px;
+    box-shadow: 0em 0em 0.125em 0.125em var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
 }
