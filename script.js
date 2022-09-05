@@ -1,15 +1,16 @@
 (function(){
 const projectBtn = document.getElementById('addProject')
 const projectsContainer = document.getElementById('projects')
-
+const projectPopUp = document.getElementById('projectPopUp')
 class Project{
     constructor(title,description){
         this.title= title;
         this.description= description;
     }
+    showPopUp = () =>{
+        projectPopUp.showModal()
+    }
     displayProject = () =>{
-        console.log(`This ${this.title}  ${this.description}`)
-
         //create div project
         let project = document.createElement('div')
         project.setAttribute('class', 'projectItem')
@@ -33,7 +34,10 @@ class Project{
 }
 let project = new Project('calculator', 'is for calculating things')
 
-projectBtn.addEventListener('click', project.displayProject)
+projectBtn.addEventListener('click', project.showPopUp)
+//this will be called when the btn in the dialog is clicked 
+//with the input value
+//projectBtn.addEventListener('click', project.displayProject)
 })();
 
 
