@@ -17,15 +17,18 @@
             <br>
             <label for="projectDescription"> <span aria-label="required">*</span>Project Description:</label>
             <br>
-                <textarea name="projectDescription" id="projectDescription" rows="10" cols="30"></textarea>
+                <textarea name="projectDescription" id="projectDescription" rows="10" cols="50"></textarea>
             <br>
-            <label for="projectStatus">Project Status:</label>
-
+            <label for="livePreview"> <span aria-label="required">*</span>Live Preview: <input type="url" name="livePreview" id="livePreview" placeholder="GitHub live preview"> </label>
+            <br>
+            <label for="codePreview"> <span aria-label="required">*</span>Code Preview: <input type="url" name="codePreview" id="codePreview" placeholder="GitHub code repository"> </label>
+            <br>
+            <label for="projectStatus"><span aria-label="required">*Project Status:</span>
             <select name="projectStatus" id="projectStatus">
-                <option value="finished">Finished</option>
-                <option value="pending">Pending</option>
+                <option value="Finished">Finished</option>
+                <option value="Pending">Pending</option>
                
-            </select>
+            </select></label>
             <br>
             <button id='submitBtn'type="submit">Add</button>
         </form>

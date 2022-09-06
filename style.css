@@ -25,7 +25,7 @@ body{
 
 /*POP UP*/
 #projectPopUp{
-  height: 30em;
+  height: 35em;
   width: 30em;
   top: 50%;
   left: 50%;
@@ -214,18 +214,18 @@ main{
 
 
 /*Project Items*/
-div.projectItem>button{
+div.projectItem>button#statusBtn{
     padding: 0.5em 2em;
     font-size: 0.75em;
     font-weight: 700;
     border: none;
     background-color: rgba(255,255,255,0);
 }
-div.projectItem#Finished>button:hover{
+div.projectItem#Finished>button#statusBtn:hover{
     background-color: lightgreen;
     color: green;
 }
-div.projectItem#Pending>button:hover{
+div.projectItem#Pending>button#statusBtn:hover{
     background-color: lightcoral;
     color: red;
 }
