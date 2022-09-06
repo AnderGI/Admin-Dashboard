@@ -9,12 +9,25 @@
 </head>
 <body>  
     <dialog id="projectPopUp">
-        <h1>title</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus modi dolor consequatur obcaecati, numquam exercitationem nihil hic fugit unde atque sit consequuntur. Esse laudantium impedit ad sed fugit, modi a!</p>
+        <form action="#" method="dialog">
+            <h1>Project Info</h1>
+            <br>
+            <br>
+            <label for="projectTitle"><span aria-label="required">*Project Name:</span>  <input type="text" name="projectTitle" id="projectTitle"></label>
+            <br>
+            <label for="projectDescription"> <span aria-label="required">*</span>Project Description:</label>
+            <br>
+                <textarea name="projectDescription" id="projectDescription" rows="10" cols="30"></textarea>
+            <br>
+            <label for="projectStatus"><span aria-label="required">*Project Status:</span>  <input type="checkbox" name="projectStatus" id="projectStatus"></label>
+            <br>
+            <button type="submit">Add</button>
+        </form>
     </dialog> 
     <header>
-        <h1>Header</h1>
-        <button>PROFILE IMAGE AND NAME</button>
+        <h1>Admin Dashboard</h1>
+       
+        <div id="menuImg"></div>
     </header>
     <main>
         <section id="projectsContainer">
@@ -30,7 +43,7 @@
         <section id="extrasContainer">
                 <section id="extraHeader">
                     <h1>Some extras</h1>
-                    <button>Add new +</button>
+                    <button id="addExtra">Add new +</button>
                 </section>
                 <section id="extras">
                     <div class="extraItem">

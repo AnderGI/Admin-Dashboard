@@ -2,6 +2,10 @@
 const projectBtn = document.getElementById('addProject')
 const projectsContainer = document.getElementById('projects')
 const projectPopUp = document.getElementById('projectPopUp')
+const projectTitle = document.getElementById('projectTitle').value
+const projectDescription = document.getElementById('projectDescription').value
+const projectStatus = document.getElementById('projectStatus').value
+
 class Project{
     constructor(title,description){
         this.title= title;
