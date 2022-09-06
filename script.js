@@ -4,8 +4,7 @@ const projectsContainer = document.getElementById('projects')
 const projectPopUp = document.getElementById('projectPopUp')
 const projectTitle = document.getElementById('projectTitle')
 const projectDescription = document.getElementById('projectDescription')
-const projectStatus = document.getElementById('projectStatus')
-
+const projectState = document.getElementById('projectStatus')
 class Project{
     constructor(title,description){
         this.title= title;
@@ -14,6 +13,8 @@ class Project{
     }
     showPopUp = () =>{
         projectPopUp.showModal()
+        projectTitle.value= ""
+        projectDescription.value= ""
     }
     displayProject = () =>{
         //create div project
@@ -29,7 +30,7 @@ class Project{
         project.append(projectDescription)
         //button
         let projectStatus = document.createElement('button')
-        projectStatus.textContent = 'Project Status'
+        projectStatus.textContent = projectState.value
         project.append(projectStatus)
 
         //add to container
@@ -47,6 +48,7 @@ document.getElementById('submitBtn').addEventListener('click', ()=>{
     project = new Project(projectTitle.value, projectDescription.value)
     project.displayProject()
 })
+
 })();
 
 

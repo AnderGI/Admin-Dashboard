@@ -19,7 +19,13 @@
             <br>
                 <textarea name="projectDescription" id="projectDescription" rows="10" cols="30"></textarea>
             <br>
-            <label for="projectStatus"><span aria-label="required">*Project Status:</span>  <input type="checkbox" name="projectStatus" id="projectStatus"></label>
+            <label for="projectStatus">Project Status:</label>
+
+            <select name="projectStatus" id="projectStatus">
+                <option value="finished">Finished</option>
+                <option value="pending">Pending</option>
+               
+            </select>
             <br>
             <button id='submitBtn'type="submit">Add</button>
         </form>
