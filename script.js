@@ -28,12 +28,24 @@ class Project{
         let projectDescription = document.createElement('p')
         projectDescription.textContent = this.description
         project.append(projectDescription)
+
+        //Live preview
+        let livePreview = document.createElement('button')
+        livePreview.textContent = 'Live Preview'
+        project.append(livePreview)
+
+        //Code files
+        let codeFiles = document.createElement('button')
+        codeFiles.textContent = 'Code file'
+        project.append(codeFiles)
+
         //button
         let projectStatus = document.createElement('button')
         projectStatus.textContent = projectState.value
         project.append(projectStatus)
 
         //add to container
+        project.setAttribute('id',projectState.value)
         projectsContainer.append(project)
 
     }

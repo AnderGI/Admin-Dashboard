@@ -213,3 +213,19 @@ main{
 }
 
 
+/*Project Items*/
+div.projectItem>button{
+    padding: 0.5em 2em;
+    font-size: 0.75em;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+div.projectItem#Finished>button:hover{
+    background-color: lightgreen;
+    color: green;
+}
+div.projectItem#Pending>button:hover{
+    background-color: lightcoral;
+    color: red;
+}
