@@ -2,14 +2,15 @@
 const projectBtn = document.getElementById('addProject')
 const projectsContainer = document.getElementById('projects')
 const projectPopUp = document.getElementById('projectPopUp')
-const projectTitle = document.getElementById('projectTitle').value
-const projectDescription = document.getElementById('projectDescription').value
-const projectStatus = document.getElementById('projectStatus').value
+const projectTitle = document.getElementById('projectTitle')
+const projectDescription = document.getElementById('projectDescription')
+const projectStatus = document.getElementById('projectStatus')
 
 class Project{
     constructor(title,description){
         this.title= title;
         this.description= description;
+
     }
     showPopUp = () =>{
         projectPopUp.showModal()
@@ -20,11 +21,11 @@ class Project{
         project.setAttribute('class', 'projectItem')
         //title
         let projectTitle = document.createElement('h1')
-        projectTitle.textContent = 'Project Title'
+        projectTitle.textContent = this.title
         project.append(projectTitle)
         //description
         let projectDescription = document.createElement('p')
-        projectDescription.textContent = 'Project Description'
+        projectDescription.textContent = this.description
         project.append(projectDescription)
         //button
         let projectStatus = document.createElement('button')
@@ -36,12 +37,16 @@ class Project{
 
     }
 }
-let project = new Project('calculator', 'is for calculating things')
+let project = new Project()
+
 
 projectBtn.addEventListener('click', project.showPopUp)
 //this will be called when the btn in the dialog is clicked 
 //with the input value
-//projectBtn.addEventListener('click', project.displayProject)
+document.getElementById('submitBtn').addEventListener('click', ()=>{
+    project = new Project(projectTitle.value, projectDescription.value)
+    project.displayProject()
+})
 })();
 
 
